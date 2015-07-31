@@ -1,0 +1,31 @@
+﻿@model List<SiteChecker.Models.StatusItem>
+
+@{
+    ViewBag.Title = "Status";
+}
+
+<h2>Status</h2>
+
+<p>
+    Shows sites availability
+</p>
+<br /><br />
+<table class="table">
+    <tr>
+        <th>Site</th>
+        <th>Status Code</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.siteUrl
+                @*@Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+            </td>
+            <td>@item.statusCode</td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<SiteChecker.Models.StatusItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Site Checker</h2>
+
+<p>
+    Shows sites availability
+</p>
+<br /><br />
+<table class="table">
+    <tr>
+        <th>Site</th>
+        <th>Status Code</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <a href="#" target="_blank">@item.siteUrl </a> 
+            </td>
+            <td>@item.statusCode</td>
+        </tr>
+    }
+
+</table>
+

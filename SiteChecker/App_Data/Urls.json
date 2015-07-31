@@ -1,0 +1,13 @@
+﻿[
+    { "Name": "GOOGLE", "Path": "http://www.google.com", "Type": "Site", "Instance": "PROD" },
+    { "Name": "MSN", "Path": "https://www.msn.com", "Type": "Site", "Instance": "PROD" },
+]
+
+
+
+
+
+
+
+
+ 
